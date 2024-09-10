@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class reverse{
+	public static void main(String args[]){
+		Scanner ip=new Scanner(System.in);
+		System.out.println("enter a number:");
+		int n=ip.nextInt();
+		int reverse1=0,rem;
+		while(n!=0){
+			rem=n%10;
+			reverse1=(reverse1*10)+rem;
+			n=n/10;
+		}
+		System.out.println(reverse1);
+	}
+}
